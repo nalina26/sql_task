@@ -20,10 +20,10 @@
 ##### The relations are set with respect to a logical flow.		
 
 ## 3. Constraints, values and data types
-##### Constraints are used to specify rules for data in a table. Usually, when it comes to a bank database, `NOT NULL` constraint is frequently encountered to ensure that a column cannot have a NULL value (e.g: IBAN, account_no), `PRIMARY KEY` and `FOREIGN KEY` are used for id attributes to also establish unicity to link tables.
+##### Constraints are used to specify rules for data in a table. Usually, when it comes to a bank database, `NOT NULL` constraint is frequently encountered to ensure that a column cannot have a NULL value (e.g: IBAN, account_no), `PRIMARY KEY` and `FOREIGN KEY` are used for id attributes to also establish unicity and to link tables.
 ##### Usage of correct data types and character length is also important especially in this case when it comes to storing values in a standardized format(e.g: IBAN, account_no, SWIFT, CNP).
-##### There is a particular data type that also required a function, in this case `TIMESTAMP` columns can be automatically initializated and updated to the current date and time (that is, the current timestamp). For example, `last_login` with both `DEFAULT CURRENT_TIMESTAMP` and `ON UPDATE CURRENT_TIMESTAMP`, the column has the current timestamp for its default value and is automatically updated to the current timestamp. 
-##### As for values, it is worth mentioning that in the `pass`(user password) collumn, storing passwords is done by hashing them.
+##### There is a particular data type that also required a function, in this case `TIMESTAMP` columns can be automatically initialized and updated to the current date and time (that is, the current timestamp). For example, `last_login` with both `DEFAULT CURRENT_TIMESTAMP` and `ON UPDATE CURRENT_TIMESTAMP`, the column has the current timestamp for its default value and is automatically updated to the current timestamp. 
+##### As for values, it is worth mentioning that in the `pass`(user password) column, storing passwords is done by hashing them.
 
 ## 4. Optimization
 ##### IBAN can be parsed to extract country code, bank code (usually for Ro) and account number.
