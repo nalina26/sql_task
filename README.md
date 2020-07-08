@@ -12,12 +12,12 @@
 		act(act_id as pk, act_number, address, expiry)
 		account(account_id as pk, user_id as fk, account_no, currency, IBAN, SWIFT)
 		transaction(transaction_id as pk, account_id as fk, IBAN_s, IBAN_d, amount, currency, tr_date)
-##### Relations
+##### Relations:
 		customer -- 1:1 -- access
 		customer -- 1:1 -- act
 		customer -- 1:m -- account
 		account -- 1:m -- transaction
-##### The relations are set with respect to a logical flow.		
+##### The relations are set taking into consideration the logical flow.		
 
 ## 3. Constraints, values and data types
 ##### Constraints are used to specify rules for data in a table. Usually, when it comes to a bank database, `NOT NULL` constraint is frequently encountered to ensure that a column cannot have a NULL value (e.g: IBAN, account_no), `PRIMARY KEY` and `FOREIGN KEY` are used for id attributes to also establish unicity and to link tables.
