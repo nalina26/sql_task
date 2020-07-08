@@ -28,4 +28,4 @@
 ## 4. Optimization
 ##### IBAN can be parsed to extract country code, bank code (usually for Ro) and account number.
 ##### CNP can be checked if valid or correctly stored by comparing with dob (date of birth) and viceversa.
-##### Values stored in `user_id` column, for example, should be generated as a combination of alphanumeric characters, let's say, first 2 characters of `user_id` to match first 2 characters of `user` (username) or other identification attribute. Same rule could also be applied to other `id` attributes.
+##### Values stored in `user_id` column, for example, should be generated as a combination of alphanumeric characters, let's say, first 2 characters of `user_id` to match first 2 characters of `user` (username) or other identification attribute or it could be simply done by using a `UUID` standard function. Same rule could also be applied to other `id` attributes.
