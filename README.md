@@ -1,4 +1,4 @@
-### sql_task
+### sql_task (Madalin & Alina)
 ## 1. DB overview (conventions, charset, logging)
 #####  A database is an organized collection of structured information or data. The database in question contains a few components that could be found in a classic bank system database, meaning that it has tables regarding users(customers), bank accounts, transactions, access(for login purpose) and identification ids data. 
 ##### The schema is called `bank_cgf` and it is built in `MySQL Workbench`. 
