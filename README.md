@@ -11,7 +11,7 @@
 		access(access_id as pk, user_id as fk, user, pass, last_login)
 		act(act_id as pk, act_number, address, expiry)
 		account(account_id as pk, user_id as fk, account_no, currency, IBAN, SWIFT)
-		transaction(transaction_id as pk, account_id as fk, IBAN_s, IBAN_d, amount, currency, tr_date)
+		transaction(transaction_id as pk, account_id as fk, IBAN_s, IBAN_d, amount, currency, tr_date, bank_d)
 ##### Relations:
 		customer -- 1:1 -- access
 		customer -- 1:1 -- act
